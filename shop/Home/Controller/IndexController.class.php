@@ -5,7 +5,5 @@ class IndexController extends Controller {
     public function index(){
         echo "xuexi";
     }
-    public function aaa(){
-        echo "xuexi1";
-    }
+
 }
