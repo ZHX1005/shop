@@ -160,6 +160,7 @@ abstract class Controller {
      */
     public function __call($method,$args) {
         if( 0 === strcasecmp($method,ACTION_NAME.C('ACTION_SUFFIX'))) {
+            //$this是当前控制器对象
             if(method_exists($this,'_empty')) {
                 // 如果定义了_empty操作 则调用
                 $this->_empty($method,$args);
