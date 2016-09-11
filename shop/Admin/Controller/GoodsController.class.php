@@ -6,7 +6,29 @@ use Think\Controller;
 class GoodsController extends Controller{
     
     //商品列表展示
+    function showlist1(){
+        //是用数据model模型
+        //实例化model对象
+       // $goods= new \Model\GoodsModel();
+        $goods=D('Goods');
+        $info=$goods->select();//获得数据信息        
+        show_bug($info);
+        foreach ($info as $k =>$v){
+            echo $v['goods_name']."</br>";
+        }
+        //把数据assign到模板
+        $this->assign('info',$info);
+        
+        $this->display();
+    }
+    //数据库查询
     function showlist(){
+        $goods=D("Goods");
+        $info = $goods->select();//获得数据信息        
+        //show_bug($info);
+        //foreach ($info as $k =>$v){
+        //    echo $v['goods_name']."</br>";
+        //}
         $this->display();
     }
     //添加商品

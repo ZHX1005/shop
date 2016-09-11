@@ -3,7 +3,15 @@ header("content-type:text/html;charset=utf-8");
 //tp模式变为开发模式
 define('APP_DEBUG', true);
 
-// 定义css、img、js常亮
+//制作一个输出调试函数
+function show_bug($msg){
+    echo "<pre>";
+        var_dump($msg);
+    echo "</pre>";
+}
+
+
+// 定义css、img、js常量
 //define("SITE_URL", "HTTP://WWW.SHOP.COM/");
 define("SITE_URL", "http://www.shop11.com/");
 
