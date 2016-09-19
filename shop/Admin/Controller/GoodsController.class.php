@@ -14,7 +14,7 @@ class GoodsController extends Controller{
         $info=$goods->select();//获得数据信息        
         show_bug($info);
         foreach ($info as $k =>$v){
-            echo $v['goods_name']."</br>";
+           echo $v['goods_name']."</br>";
         }
         //把数据assign到模板
         $this->assign('info',$info);
@@ -29,6 +29,8 @@ class GoodsController extends Controller{
         //foreach ($info as $k =>$v){
         //    echo $v['goods_name']."</br>";
         //}
+        //把数据assign到模板,模板变量赋值
+        $this->assign('info',$info);//第一个info在模板中使用
         $this->display();
     }
     //添加商品
