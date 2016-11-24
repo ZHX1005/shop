@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2016-09-19 15:29:25
+<?php /* Smarty version Smarty-3.1.6, created on 2016-11-18 16:33:55
          compiled from "D:/wamp/www/shop/shop/Admin/View\Goods\update.html" */ ?>
 <?php /*%%SmartyHeaderCode:1004657df93d5ac3a41-61280168%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '56685f6a2974a69a328c2499766b05ba68699c10' => 
     array (
       0 => 'D:/wamp/www/shop/shop/Admin/View\\Goods\\update.html',
-      1 => 1473335363,
+      1 => 1479457532,
       2 => 'file',
     ),
   ),
@@ -15,20 +15,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'variables' => 
-  array (
-    'Think' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_57df93d5ba637',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_57df93d5ba637')) {function content_57df93d5ba637($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
         <title>修改商品</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <link href="<?php echo $_smarty_tpl->tpl_vars['Think']->value['const']['ADMIN_CSS_URL'];?>
+        <link href="<?php echo @ADMIN_CSS_URL;?>
 mine.css" type="text/css" rel="stylesheet">
     </head>
 
@@ -38,7 +34,8 @@ mine.css" type="text/css" rel="stylesheet">
             <span>
                 <span style="float:left">当前位置是：商品管理-》修改商品信息</span>
                 <span style="float:right;margin-right: 8px;font-weight: bold">
-                    <a style="text-decoration: none" href="__MODULE__/Goods/showlist">【返回】</a>
+                    <a style="text-decoration: none" href="<?php echo @__MODULE__;?>
+/Goods/showlist">【返回】</a>
                 </span>
             </span>
         </div>

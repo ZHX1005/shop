@@ -1,0 +1,9 @@
+[ 2016-10-05T15:22:43+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/mine.css
+ERR: 非法操作:mine.css
+
+[ 2016-10-05T15:22:47+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/admin.php?c=goods&a=add
+ERR: 非法操作:admin.php
+
+[ 2016-10-05T15:22:49+08:00 ] 127.0.0.1 /shop/index.php/Admin/Goods/mine.css
+ERR: 非法操作:mine.css
+
